@@ -22,7 +22,7 @@ class BaniShopper {
         borderRadius: BorderRadius.circular(10),
       ),
       builder: (context) {
-        final size = MediaQuery.sizeOf(context);
+        final size = MediaQuery.of(context).size;
         return Consumer(
           builder: (context, ref, child) {
             final provider = ref.watch(baniCheckoutVM);
